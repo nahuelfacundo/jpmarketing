@@ -1,0 +1,57 @@
+@import "colores";
+@import "flexbox";
+@import "boxmodel";
+
+$colores: (
+    bgFooter: $bgFooter,
+    colorFooter: $colorFooter,
+);
+
+$tamanios: (
+    sizeRedes: 30px,
+    sizeP: 13px,
+);
+
+$boxmodel: (
+    p-1: 10px,
+    ml-1: 10px,
+    p-0: 0px,
+    pt-2: 20px
+);
+
+
+footer{
+    background-image: map-get($colores, bgFooter);
+    color: map-get($colores, colorFooter);
+    @include flexRow;
+    justify-content: space-between;
+    align-items: center;
+    padding: $p-10*2;
+}
+
+.footer__datos{
+    text-align: center;
+}
+
+.footer__datos p{
+    font-size: map-get($tamanios, sizeP);
+}
+
+.footer__redes{
+    font-size: map-get($tamanios, sizeRedes);
+    display: flex;
+    align-items: center;
+    padding-right: $p-30;
+}
+
+.footer__redes a{
+    margin-left: map-get($boxmodel, ml-1);
+    padding: map-get($boxmodel, p-0);
+    color: map-get($colores, colorFooter);
+}
+
+@media only screen and (max-width:767px){
+    footer{
+        @include flexCol;
+        padding-top: map-get($boxmodel, pt-2);}
+}

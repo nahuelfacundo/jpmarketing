@@ -1,0 +1,61 @@
+@import "colores";
+@import "boxmodel";
+
+nav{
+    background-color: $bgNav;
+}
+
+.nav__logo{
+    padding: $p-20;
+}
+
+.navbar-nav{
+    flex-direction: column;
+    list-style-type: none;
+    font-weight: bold;
+    gap: 5px;
+}
+
+.navbar-nav li{
+    transition: all 0.5s;
+}
+
+.navbar-nav li:hover{ transform: translateX(10px);}
+
+.navbar-nav li a{
+    color: $colorSegundo; 
+    text-decoration: none;
+    padding: 0px;
+}
+
+.navbar-nav li a:hover{color: $colorTercero;}
+
+@media only screen and (max-width:992px){
+    .sidebarLogo{
+        display: flex;
+        justify-content: center
+    }
+}
+
+nav{justify-content: space-between}
+
+nav a{padding-left: $p-10*1.5;}
+
+.nav-link{
+    color: $colorNav !important;
+}
+
+.nav-link:hover{
+    color: $colorHoverNav !important;
+}
+
+@media only screen and (min-width:993px){
+    .navbar-expand-lg, .navbar-nav {flex-direction: column !important;}    
+    #navbarNav{flex-direction: column}
+    }
+
+.nav__error404{
+    @media only screen and (min-width:993px){
+        min-height: 100vh;
+    }
+}

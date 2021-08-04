@@ -1,0 +1,223 @@
+footer {
+  background-image: linear-gradient(#484848, #717171);
+  color: #E5E5E5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px; }
+
+.footer__datos {
+  text-align: center; }
+
+.footer__datos p {
+  font-size: 13px; }
+
+.footer__redes {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  padding-right: 30px; }
+
+.footer__redes a {
+  margin-left: 10px;
+  padding: 0px;
+  color: #E5E5E5; }
+
+@media only screen and (max-width: 767px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px; } }
+
+nav {
+  background-color: #D8B2F4; }
+
+.nav__logo {
+  padding: 20px; }
+
+.navbar-nav {
+  flex-direction: column;
+  list-style-type: none;
+  font-weight: bold;
+  gap: 5px; }
+
+.navbar-nav li {
+  transition: all 0.5s; }
+
+.navbar-nav li:hover {
+  transform: translateX(10px); }
+
+.navbar-nav li a {
+  color: #7217B3;
+  text-decoration: none;
+  padding: 0px; }
+
+.navbar-nav li a:hover {
+  color: #484848; }
+
+@media only screen and (max-width: 992px) {
+  .sidebarLogo {
+    display: flex;
+    justify-content: center; } }
+
+nav {
+  justify-content: space-between; }
+
+nav a {
+  padding-left: 15px; }
+
+.nav-link {
+  color: #7217B3 !important; }
+
+.nav-link:hover {
+  color: #484848 !important; }
+
+@media only screen and (min-width: 993px) {
+  .navbar-expand-lg, .navbar-nav {
+    flex-direction: column !important; }
+  #navbarNav {
+    flex-direction: column; } }
+
+@media only screen and (min-width: 993px) {
+  .nav__error404 {
+    min-height: 100vh; } }
+
+.topNav {
+  background-color: #C6005F;
+  color: #E5E5E5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.topNav p {
+  font-size: medium;
+  font-weight: 500;
+  text-align: center;
+  margin: 5px; }
+
+body {
+  font-family: Quicksand, sans-serif; }
+
+h1 {
+  color: #C6005F;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 30px; }
+
+h2 {
+  color: #484848;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 5px; }
+
+h3 {
+  color: #484848;
+  font-weight: bold;
+  font-family: Catamaran, sans-serif;
+  margin-top: 20px;
+  margin-bottom: 5px; }
+
+.index__tituloPrincipal {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+.index__subtituloPrincipal {
+  text-align: center;
+  font-size: 40px;
+  color: #484848;
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+.inicio__bajada {
+  font-size: 20px;
+  text-align: center; }
+  @media only screen and (min-width: 1024px) {
+    .inicio__bajada {
+      margin-left: 20%;
+      margin-right: 20%; } }
+
+.index__section1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  flex-wrap: wrap;
+  gap: 15px; }
+
+.card {
+  transition: all .25s; }
+
+.experiencia__cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 500px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  @media only screen and (min-width: 1024px) {
+    .experiencia__cards {
+      padding-right: 40%; } }
+
+.card:hover {
+  transform: scale(1.03); }
+
+.card-body {
+  padding: 7px;
+  height: 100%; }
+
+.card-img-top {
+  width: 60%; }
+
+.card-text {
+  font-weight: bold;
+  font-size: 20px; }
+
+.card-title {
+  font-weight: bold; }
+
+.card-text-princ {
+  font-weight: bold;
+  font-size: 30px; }
+
+.sidebarLogo {
+  padding: 5%; }
+
+.cardExp {
+  align-items: center; }
+
+@media only screen and (min-width: 1024px) {
+  .servivicios__p {
+    padding-right: 50%;
+    margin-bottom: 50px; } }
+
+@media only screen and (min-width: 1024px) {
+  .plan__p {
+    width: 70%; } }
+
+@media only screen and (min-width: 1024px) {
+  .plan__img {
+    width: 70%; } }
+
+.nosotros__fotoPersona {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+.servicios__video {
+  max-width: 90%; }
+
+.contacto__mapa {
+  max-width: 90%; }
+
+.error__linkIndex {
+  color: #484848;
+  font-weight: bold;
+  text-decoration: none; }
+
+.error__linkIndex:hover {
+  color: #7217B3;
+  text-decoration: none; }

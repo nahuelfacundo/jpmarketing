@@ -1,0 +1,150 @@
+@import "colores";
+@import "sizes";
+@import "responsive";
+@import "boxmodel";
+@import "flexbox";
+@import "footer";
+@import "nav";
+@import "topnav";
+
+
+body{font-family: Quicksand, sans-serif;}
+
+h1{
+    color: $colorH1;
+    font-weight: bold;
+    margin-top: $m-50;
+    margin-bottom: $m-30;
+}
+
+h2{
+    color: $colorH2;
+    font-weight: bold;
+    margin-top: $m-20;
+    margin-bottom: $m-5;
+}
+
+h3{
+    color: $colorH3;
+    font-weight: bold;
+    font-family: Catamaran, sans-serif;
+    margin-top: $m-20;
+    margin-bottom: $m-5;
+}
+
+.index__tituloPrincipal{
+    text-align: center;
+    font-size: $sizeTituloPrincipal;
+    margin-top: $m-0;
+    margin-bottom: $m-0;
+}
+
+.index__subtituloPrincipal{
+    text-align: center;
+    font-size: $sizeTituloPrincipal*.8;
+    color: $colorH2;
+    margin-top: $m-0;
+    margin-bottom: $m-0;
+}
+
+.inicio__bajada{
+    font-size:$textoBajada;
+    text-align: center;
+    @media only screen and (min-width:1024px){
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+.index__section1{
+    @include flexRow;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card{transition: all .25s;}
+
+.experiencia__cards{
+    @include flexRowWrap;
+    gap: 10px;
+    width: 500px;
+    margin-top: $m-10;
+    margin-bottom: $m-10;
+    @media only screen and (min-width:1024px){
+    padding-right: 40%;
+    }
+}
+
+.card:hover{
+    transform: scale(1.03)
+}
+
+.card-body{padding: 7px;
+    height: 100%;}
+
+.card-img-top{width: 60%;}
+
+.card-text{
+    font-weight: bold;
+    font-size: $textoBajada;
+}
+
+.card-title{
+font-weight: bold;
+}
+
+.card-text-princ{
+    font-weight: bold;
+    font-size: $textoBajada*1.5;
+}
+
+.sidebarLogo{padding: 5%;}
+
+.cardExp{
+    align-items: center;
+}
+
+.servivicios__p{
+    @media only screen and (min-width:1024px){
+    padding-right: 50%;
+    margin-bottom: $m-50;
+    }
+}
+
+.plan__p{
+    @media only screen and (min-width:1024px){
+        width: 70%;
+    }
+}
+
+.plan__img{
+    @media only screen and (min-width:1024px){
+    width: 70%;
+    }
+}
+
+.nosotros__fotoPersona{
+    margin-top: $p-20;
+    margin-bottom: $p-20;
+}
+
+.servicios__video{
+        max-width: 90%;    
+}
+
+.contacto__mapa{
+    max-width: 90%;    
+}
+
+.error__linkIndex{
+    color: $colorTercero; 
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.error__linkIndex:hover{color: $colorSegundo;
+    text-decoration: none;
+}
