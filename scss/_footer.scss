@@ -27,27 +27,46 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding: $p-10*2;
+    height: 130px;
 }
 
 .footer__datos{
-    text-align: center;
+    text-align: right;
 }
 
 .footer__datos p{
     font-size: map-get($tamanios, sizeP);
+    margin: 0px;
+    padding-right: $p-20;
 }
 
 .footer__redes{
     font-size: map-get($tamanios, sizeRedes);
     display: flex;
     align-items: center;
-    padding-right: $p-30;
+    padding-left: $p-20;
 }
 
+
 .footer__redes a{
+    padding: map-get($boxmodel, p-0);
+    color: map-get($colores, $colorFooter);
+}
+
+.footer__redes2{
+    font-size: map-get($tamanios, sizeRedes);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: $p-20;
+    position:absolute;
+    top: 90%;    
+}
+
+.footer__redes2 a{
     margin-left: map-get($boxmodel, ml-1);
     padding: map-get($boxmodel, p-0);
-    color: map-get($colores, colorFooter);
+    color: map-get($colores, bgFooter);
 }
 
 @media only screen and (max-width:767px){
@@ -63,4 +82,9 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.footer__princ{
+    justify-content: space-between;
+    padding-top: 10px;
 }

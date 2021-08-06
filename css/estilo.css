@@ -5,24 +5,39 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 20px; }
+  padding: 20px;
+  height: 130px; }
 
 .footer__datos {
-  text-align: center; }
+  text-align: right; }
 
 .footer__datos p {
-  font-size: 13px; }
+  font-size: 13px;
+  margin: 0px;
+  padding-right: 20px; }
 
 .footer__redes {
   font-size: 30px;
   display: flex;
   align-items: center;
-  padding-right: 30px; }
+  padding-left: 20px; }
 
 .footer__redes a {
+  padding: 0px; }
+
+.footer__redes2 {
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 20px;
+  position: absolute;
+  top: 90%; }
+
+.footer__redes2 a {
   margin-left: 10px;
   padding: 0px;
-  color: #919191; }
+  color: #DADADA; }
 
 @media only screen and (max-width: 767px) {
   footer {
@@ -36,6 +51,10 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center; }
+
+.footer__princ {
+  justify-content: space-between;
+  padding-top: 10px; }
 
 nav {
   background-color: #AA36B5; }
@@ -148,13 +167,15 @@ h3 {
   font-size: 50px;
   margin-top: 0px;
   color: #E5E5E5;
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  text-shadow: #484848 0 0 20px; }
 
 .index__subtituloPrincipal {
   font-size: 40px;
   color: #E5E5E5;
   margin-top: 0px;
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  text-shadow: #484848 0 0 20px; }
 
 .inicio__bajada {
   font-size: 20px;
