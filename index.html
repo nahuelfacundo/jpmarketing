@@ -6,6 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="JP Marketing, logramos los mejores resultados en publicidad para tu empresa.">
         <meta name="keywords" content="jpmarketing, marketing, publicidad, agencia, google, ads, adwords, facebook, posicionamiento, campaña">
+        <!-- Link fuentes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <!-- Link CSS aos -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!-- Bootstrap CSS -->
@@ -19,65 +23,77 @@
 <body>
     <div class="container-fluid">
         <!-- Top nav -->
-        <div class="row">
-            <div class="col-md-12 col-sx-12 m-0 p-0 topNav">
+<!--         <div class="row">
+            <div class="col-md-12 col-sx-12 mb-1 p-0 topNav">
                     <p>Teléfono de contacto +54.11.5350.5350  -  Whatsapp +54.11.5350.5350</p>
             </div>
-        </div>
+        </div> -->
         <!-- fin Top nav -->
         <div class="row">
             <!-- Sidebar-->
             <nav class="col-lg-2 col-xs-12 navbar navbar-expand-lg navbar-light">
-                <a href="#"><img class="img-fluid nav__logo" src="assets/img/Logo.png" alt="Logo"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <a href="#"><img src="assets/img/Logo.png" class=" img-fluid nav__logo" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="nav__lista collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">INICIO <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/serviciosdigitales.html">SERVICIOS DIGITALES</a>
+                        <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages/plandetrabajo.html">PLAN DE TRABAJO</a>
+                        <a class="nav-link" href="pages/contacto.html">Contacto</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pages/experiencia.html">EXPERIENCIA</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pages/nosotros.html">NOSOTROS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pages/contacto.html">CONTACTO</a>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Servicios digitales
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="pages/serviciosdigitales.html">Servicios</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
                         </li>
                     </ul>
                 </div>
             </nav>
             <!-- fin Sidebar -->
             <!-- Contenido página -->
-            <div class="col-md-10 col-xs-12 pl-5 pr-5">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-12 col-xs-12 mt-4 mb-4">
-                            <img src="assets/img/fotoprincipal.jpg" class="img-fluid rounded" alt="foto-trabajo" data-aos="fade-up" data-aos-duration="1200">
-                        </div>
-                    </div>
+            <div class="col-md-10 col-xs-12 p-0">
+                <div class="container-fluid p-0">
                     <div class="row">
                         <div class="col-md-12 col-xs-12">
-                            <h1 class="index__tituloPrincipal">¿Querés posicionar tu marca?</h1>
-                            <h1 class="index__subtituloPrincipal">Nosotros tenemos la solución</h1> 
+                            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="4000">
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img class="d-block w-100" src="assets/img/principal01.jpg" alt="First slide">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-block w-100" src="assets/img/principal02.jpg" alt="First slide">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img class="d-block w-100" src="assets/img/principal03.jpg" alt="First slide">
+                                  </div>
+                                </div>
+                                <div class="index__titulos" data-aos="fade-right" data-aos-duration="1000">
+                                    <h1 class="index__tituloPrincipal">¿Querés posicionar tu marca?</h1>
+                                    <h1 class="index__subtituloPrincipal">Nosotros tenemos la solución</h1> 
+                                </div>
+                              </div>
                         </div>
                     </div>
                     <div class="row">
                         <article class="col-md-12 col-xs-12">
-                            <p class="inicio__bajada">¿Preparad@ para posicionar tu marca?
-                                El 97% de nuestros clientes ven resultados positivos dentro de los primeros 60 días.</p>
+                            <p class="inicio__bajada">
+                                Estamos para ayudarte a aumentar las ventas de tu empresa. <br>
+                                Somos expertos en Google Ads y Facebook Ads y estamos certificados en todos sus productos y herramientas.</p>
                         </article>
                     </div>
                     <!-- cards -->
-                    <div class="row mt-4 mb-4">
+                    <div class="row mt-4 mb-4 pl-5">
                         <div class="col-md-3 col-xs-12">
                             <div class="card-body">
                                 <h2 class="card-text-princ">Servicios Digitales</h2>
@@ -85,39 +101,39 @@
                             </div>
                         </div>
                         <div class="col-md-9 col-xs-12 index__section1">
-                            <div class="card border" style="width: 8rem;">
+                            <div class="card shadow p-2 mb-5 bg-body rounded">
                                 <img src="assets/img/icon-mark.jpg" class="card-img-top" alt="icono-servicios">
                                 <div class="card-body">
-                                  <h4 class="card-text">Google ads</h4>
-                                  <p>Definimos la inversión y estrategia para publicar en Google.</p>
+                                  <h4 class="card-text">Google display</h4>
+                                  <p>Colcación de anuncios en imágenes por los diferentes sitios de la red de Google.</p>
                                 </div>
                             </div>
-                            <div class="card border" style="width: 8rem;">
+                            <div class="card shadow p-2 mb-5 bg-body rounded">
                                 <img src="assets/img/icon-mark.jpg" class="card-img-top" alt="icono-servicios">
                                 <div class="card-body">
                                     <h4 class="card-text">Redes sociales</h4>
                                     <p>Análisis de la estrategia publicitaria más efectiva para sus redes.</p>
                                 </div>
                             </div>
-                            <div class="card border" style="width: 8rem;">
+                            <div class="card shadow p-2 mb-5 bg-body rounded">
                                 <img src="assets/img/icon-mark.jpg" class="card-img-top" alt="icono-servicios">
                                 <div class="card-body">
                                     <h4 class="card-text">Desarrollo web</h4>
-                                    <p>Desarrollo del sitio web de acuerdo a sus necesidades.</p>
+                                    <p>Desarrollo y diseño de sitio web de acuerdo al tipo de emprendimiento.</p>
                                 </div>
                             </div>
-                            <div class="card border" style="width: 8rem;">
+                            <div class="card shadow p-2 mb-5 bg-body rounded">
                                 <img src="assets/img/icon-mark.jpg" class="card-img-top" alt="icono-servicios">
                                 <div class="card-body">
-                                    <h4 class="card-text">Marketing Digital</h4>
-                                    <p>Posicionar la marca, incrementar las ventas y fidelizar a los clientes.</p>
+                                    <h4 class="card-text">Youtube</h4>
+                                    <p>Interactuá con tu público mediante la plataforma de videos más grande del mundo.</p>
                                 </div>
                             </div>
-                            <div class="card border" style="width: 8rem;">
+                            <div class="card shadow p-2 mb-5 bg-body rounded">
                                 <img src="assets/img/icon-mark.jpg" class="card-img-top" alt="icono-servicios">
                                 <div class="card-body">
                                     <h4 class="card-text">Posición en buscadores</h4>
-                                    <p>Estrategias de marketing para posicionar en Google y atraer nuevos clientes.</p>
+                                    <p>Mostrá tu anuncio en las búsquedas de Google, superando a tu competencia.</p>
                                 </div>
                             </div>
                         </div>  
@@ -128,20 +144,22 @@
             <!-- fin Contenido página -->
         </div>
         <div class="row">
-            <!-- Footer -->
-            <footer class="col-md-12 col-sx-12">
-                <div>
-                    <a href="#"><img src="assets/img/Logo-footer.png" alt="Logo"></a>
+            <footer class="col-12 m-0 p-0">
+                <div class="col-md-2 col-xs-12 foo1">
+                    <div class="d-flex">
+                        <a href="#"><img src="assets/img/Logo-footer.png" class="img-fluid" alt="Logo"></a>
+                    </div>
                 </div>
-                <div class="footer__datos">
-                    <p>Todos los derechos reservados 2021. Diseño: Nahuel Ponce <br> Teléfono de contacto +54.11.5350.5350  -  Whatsapp +54.11.5350.5350 <br> Buenos Aires, Argentina</p>
-                </div>
-                <div class="footer__redes">
-                    <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
-                    <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+                <div class="col-md-10 col-xs-12 foo2">
+                    <div class="footer__datos">
+                        <p>Todos los derechos reservados 2021. Diseño: Nahuel Ponce <br> Teléfono de contacto +54.11.5350.5350  -  Whatsapp +54.11.5350.5350 <br> Buenos Aires, Argentina</p>
+                    </div>
+                    <div class="footer__redes">
+                        <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+                    </div>
                 </div>
             </footer>
-            <!-- fin Footer -->
         </div>
     </div>
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->

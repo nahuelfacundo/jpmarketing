@@ -1,6 +1,6 @@
 footer {
-  background-image: linear-gradient(#484848, #717171);
-  color: #E5E5E5;
+  background-color: #DADADA;
+  color: #919191;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -22,7 +22,7 @@ footer {
 .footer__redes a {
   margin-left: 10px;
   padding: 0px;
-  color: #E5E5E5; }
+  color: #919191; }
 
 @media only screen and (max-width: 767px) {
   footer {
@@ -30,11 +30,21 @@ footer {
     flex-direction: column;
     padding-top: 20px; } }
 
+.foo1 {
+  background-color: #BC43C7;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 nav {
-  background-color: #00AFB9; }
+  background-color: #AA36B5; }
 
 .nav__logo {
   padding: 20px; }
+
+.navbar {
+  justify-content: center; }
 
 .navbar-nav {
   flex-direction: column;
@@ -83,8 +93,23 @@ nav a {
   .nav__error404 {
     min-height: 100vh; } }
 
+.nav__lista {
+  align-items: flex-start; }
+
+.dropdown-menu {
+  background-color: transparent;
+  border: 0px; }
+
+.dropdown-item {
+  color: #E5E5E5 !important;
+  padding-left: 15px !important; }
+
+.dropdown-item:hover {
+  color: #DCF2B0 !important;
+  background-color: transparent; }
+
 .topNav {
-  background-color: #C6005F;
+  background-color: #F5CCE8;
   color: #E5E5E5;
   display: flex;
   flex-direction: row;
@@ -97,7 +122,8 @@ nav a {
   margin: 5px; }
 
 body {
-  font-family: Quicksand, sans-serif; }
+  font-family: Quicksand, sans-serif;
+  overflow-x: hidden; }
 
 h1 {
   color: #C6005F;
@@ -119,25 +145,21 @@ h3 {
   margin-bottom: 5px; }
 
 .index__tituloPrincipal {
-  text-align: center;
   font-size: 50px;
   margin-top: 0px;
+  color: #E5E5E5;
   margin-bottom: 0px; }
 
 .index__subtituloPrincipal {
-  text-align: center;
   font-size: 40px;
-  color: #484848;
+  color: #E5E5E5;
   margin-top: 0px;
   margin-bottom: 0px; }
 
 .inicio__bajada {
   font-size: 20px;
-  text-align: center; }
-  @media only screen and (min-width: 1024px) {
-    .inicio__bajada {
-      margin-left: 20%;
-      margin-right: 20%; } }
+  padding-left: 50px;
+  padding-top: 20px; }
 
 .index__section1 {
   display: flex;
@@ -146,10 +168,11 @@ h3 {
   align-items: flex-start;
   position: relative;
   flex-wrap: wrap;
-  gap: 15px; }
+  gap: 10px; }
 
 .card {
-  transition: all .25s; }
+  transition: all .25s;
+  width: 18%; }
 
 .experiencia__cards {
   display: flex;
@@ -221,3 +244,8 @@ h3 {
 .error__linkIndex:hover {
   color: #7217B3;
   text-decoration: none; }
+
+.index__titulos {
+  position: absolute;
+  top: 60%;
+  left: 50px; }

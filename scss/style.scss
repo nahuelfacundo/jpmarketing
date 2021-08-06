@@ -8,7 +8,10 @@
 @import "topnav";
 
 
-body{font-family: Quicksand, sans-serif;}
+body{
+    font-family: Quicksand, sans-serif;
+    overflow-x: hidden;
+}
 
 h1{
     color: $colorH1;
@@ -33,27 +36,23 @@ h3{
 }
 
 .index__tituloPrincipal{
-    text-align: center;
     font-size: $sizeTituloPrincipal;
     margin-top: $m-0;
+    color: $colorTitulos;
     margin-bottom: $m-0;
 }
 
 .index__subtituloPrincipal{
-    text-align: center;
     font-size: $sizeTituloPrincipal*.8;
-    color: $colorH2;
+    color: $colorTitulos;
     margin-top: $m-0;
     margin-bottom: $m-0;
 }
 
 .inicio__bajada{
     font-size:$textoBajada;
-    text-align: center;
-    @media only screen and (min-width:1024px){
-        margin-left: 20%;
-        margin-right: 20%;
-    }
+    padding-left: 50px;
+    padding-top: 20px;
 }
 
 .index__section1{
@@ -62,10 +61,11 @@ h3{
     align-items: flex-start;
     position: relative;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 10px;
 }
 
-.card{transition: all .25s;}
+.card{transition: all .25s;
+width: 18%;}
 
 .experiencia__cards{
     @include flexRowWrap;
@@ -147,4 +147,10 @@ font-weight: bold;
 
 .error__linkIndex:hover{color: $colorSegundo;
     text-decoration: none;
+}
+
+.index__titulos{
+    position: absolute;
+    top: 60%;
+    left: 50px;
 }

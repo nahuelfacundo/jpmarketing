@@ -21,7 +21,7 @@ $boxmodel: (
 
 
 footer{
-    background-image: map-get($colores, bgFooter);
+    background-color: $bgFooter;
     color: map-get($colores, colorFooter);
     @include flexRow;
     justify-content: space-between;
@@ -54,4 +54,13 @@ footer{
     footer{
         @include flexCol;
         padding-top: map-get($boxmodel, pt-2);}
+}
+
+
+.foo1{
+    background-color: #BC43C7;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
