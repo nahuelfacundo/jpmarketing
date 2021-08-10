@@ -6,6 +6,7 @@
 @import "footer";
 @import "nav";
 @import "topnav";
+@import "plantrabajo";
 
 
 body{
@@ -35,26 +36,46 @@ h3{
     margin-bottom: $m-5;
 }
 
+.p{
+    font-family: Catamaran, sans-serif;
+    font-size: 1em;
+}
+
+.index__titulos{
+    @media only screen and (min-width:577px){
+        position: absolute;
+        top: 60%;
+        left: 50px;
+    }
+}
+
 .index__tituloPrincipal{
-    font-size: $sizeTituloPrincipal;
-    margin-top: $m-0;
-    color: $colorTitulos;
-    margin-bottom: $m-0;
-    text-shadow: #484848 0 0 20px;
+    @media only screen and (min-width:577px){
+        font-size: $sizeTituloPrincipal;
+        color: $colorTitulos;
+        text-shadow: #484848 0 0 20px;
+        margin-top: $m-0;
+        margin-bottom: $m-0;
+    }    
 }
 
 .index__subtituloPrincipal{
-    font-size: $sizeTituloPrincipal*.8;
-    color: $colorTitulos;
-    margin-top: $m-0;
-    margin-bottom: $m-0;
-    text-shadow: #484848 0 0 20px;
+    @media only screen and (min-width:577px){
+        font-size: $sizeTituloPrincipal*.8;
+        color: $colorTitulos;
+        text-shadow: #484848 0 0 20px;
+        margin-top: $m-0;
+        margin-bottom: $m-0;
+        }
 }
 
 .inicio__bajada{
     font-size:$textoBajada;
     padding-left: 50px;
     padding-top: 20px;
+    @media only screen and (min-width:577px){
+    width: 60%;
+    }
 }
 
 .index__section1{
@@ -66,8 +87,13 @@ h3{
     gap: 10px;
 }
 
-.card{transition: all .25s;
-width: 18%;}
+.index__card{
+    transition: all .25s;
+    @media only screen and (min-width:577px){
+        width: 220px;
+        height: 300px;
+    }
+}
 
 .experiencia__cards{
     @include flexRowWrap;
@@ -80,7 +106,7 @@ width: 18%;}
     }
 }
 
-.card:hover{
+.index__card:hover{
     transform: scale(1.03)
 }
 
@@ -149,10 +175,4 @@ font-weight: bold;
 
 .error__linkIndex:hover{color: $colorSegundo;
     text-decoration: none;
-}
-
-.index__titulos{
-    position: absolute;
-    top: 60%;
-    left: 50px;
 }
