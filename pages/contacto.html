@@ -6,6 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="JP Marketing, contactactate con nosotros. Te responderemos a la brevedad.">
         <meta name="keywords" content="contacto, e-mail, teléfono, correo, jpmarketing, publicidad, agencia, google, ads, adwords, facebook, posicionamiento, campaña">
+        <!-- Link fuentes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
         <!-- Link CSS aos -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!-- Bootstrap CSS -->
@@ -20,76 +25,116 @@
     <div class="container-fluid">
         <!-- Top nav -->
         <div class="row">
-            <div class="col-lg-12 col-sx-12 m-0 p-0 topNav">
+            <div class="col-md-12 col-sx-12 mb-1 p-0 topNav">
                     <p>Teléfono de contacto +54.11.5350.5350  -  Whatsapp +54.11.5350.5350</p>
             </div>
         </div>
         <!-- fin Top nav -->
         <div class="row">
             <!-- Sidebar-->
-            <nav class="col-lg-2 col-xs-12 navbar navbar-expand-lg navbar-light navbar--bg">
-                <a href="../index.html"><img class="img-fluid nav__logo" src="../assets/img/Logo.png" alt="Logo"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+            <nav class="col-lg-2 col-xs-12 navbar navbar-expand-lg navbar-light">
+                <a href="../index.html"><img src="../assets/img/Logo.png" class=" img-fluid nav__logo" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav navLista font-weight-bold">
+                <div class="nav__lista collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="../index.html">INICIO <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="serviciosdigitales.html">SERVICIOS DIGITALES</a>
+                            <a class="nav-link" href="serviciosdigitales.html">Servicios Digitales</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="plandetrabajo.html">PLAN DE TRABAJO</a>
+                            <a class="nav-link" href="plandetrabajo.html">Plan de Trabajo</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="experiencia.html">EXPERIENCIA</a>
+                            <a class="nav-link" href="experiencia.html">Casos de éxito</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">CONTACTO</a>
+                        <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
+                        <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Servicios digitales
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="pages/serviciosdigitales.html">Servicios Digitales</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                        </li> -->
                     </ul>
                 </div>
             </nav>
             <!-- fin Sidebar -->
             <!-- Contenido página -->
-            <div class="col-md-10 col-xs-12">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-12 col-xs-12">
-                            <div>
-                                <h1>Formulario de contacto</h1>
-                            </div>
-                            <form id="formularioContacto" action="">
-                                <input type="text" placeholder="Nombre"><br>
-                                <input type="number" placeholder="Teléfono" name="" id=""><br>
-                                <input type="email" placeholder="E-mail"><br>
-                                <fieldset>
-                                    <legend>¿Desea recibir nuestras novedades por E-mail?</legend>
-                                    Sí <input type="radio" name="news" id="">
-                                    No <input type="radio" name="news" id="">
-                                </fieldset><br>
-                                <select name="opcion" id="opcion">
-                                    <option value="Come">Comentario</option>
-                                    <option value="Pres">Presupuesto</option>
-                                    <option value="Cons">Consulta</option>
-                                </select><br>
-                                <textarea name="" placeholder="Ingrese aquí el detalle." id="" cols="30" rows="10"></textarea><br>
-                                <input type="submit" value="ENVIAR">
-                                <input type="reset" value="LIMPIAR"><br>
-                            </form>
+            <div class="col-lg-10 col-xs-12 pb-5">
+                <div class="row">
+                    <!-- Título -->
+                    <div class="col-12 contenido__img--top pl-5">
+                        <div>
+                            <h1 data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">Formulario de contacto</h1>
+                        </div>
+                        <div>
+                            <p>Podes dejarnos tu mensaje y tus datos en el formulario debajo, y pronto nos comunicaremos.</p>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12 col-xs-12 mb-4">
-                            <div class="ubicacion">
-                                <h1>Nuestra oficina</h1>
-                                <iframe class="contacto__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6567.356458148198!2d-58.39912440100949!3d-34.612297249009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb741329161d%3A0xf69a3c4f4e1e985a!2sJP!5e0!3m2!1ses-419!2sar!4v1624041414559!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <!-- Formulario -->
+                    <div class="col-12 mb-5">
+                        <div class="form-body">
+                            <div class="form-content">
+                                <div class="form-items">
+                                    <form class="requires-validation" novalidate>
+                                        <div class="col-md-12">
+                                            <input class="form-control" type="text" name="name" placeholder="Nombre completo" required>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <input class="form-control" type="email" name="email" placeholder="E-mail" required>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <input class="form-control" type="text" name="number" placeholder="Teléfono" required>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <select class="form-select mt-3" required>
+                                                    <option selected disabled value="">Elija</option>
+                                                    <option value="cons">Consulta</option>
+                                                    <option value="pres">Presupuesto</option>
+                                                    <option value="coment">Comentario</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-12 pt-3">
+                                            <textarea name="" placeholder="Ingrese aquí el detalle." id="" cols="30" rows="10"></textarea><br>
+                                        </div>
+                                        <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                        <label class="form-check-label">Deseo recibir novedades por correo.</label>
+                                        </div>
+                                        <div class="form-button mt-3">
+                                            <button id="submit" type="submit" class="btn btn-primary">Enviar</button>
+                                            <button id="submit" type="reset" class="btn btn-primary">Limpiar</button>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
+                        </div>
+                    </div>
+                    <!-- Título -->
+                    <div class="col-12 contenido__img--top pl-5">
+                        <div>
+                            <h1 data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">Nuestra oficina</h1>
+                        </div>
+                        <div>
+                            <p>Estamos ubicados en Rincón 157, en la Ciudad Autónoma de Buenos Aires.</p>
+                        </div>
+                    </div>
+                    <!-- Mapa -->
+                    <div class="col-12 pl-5">
+                        <div>
+                            <iframe class="contacto__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6567.356458148198!2d-58.39912440100949!3d-34.612297249009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb741329161d%3A0xf69a3c4f4e1e985a!2sJP!5e0!3m2!1ses-419!2sar!4v1624041414559!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
@@ -98,19 +143,22 @@
         </div>
         <div class="row">
             <!-- Footer -->
-            <footer class="col-md-12 col-sx-12">
-                <div>
-                    <a href="../index.html"><img src="../assets/img/Logo-footer.png" alt="Logo"></a>
+            <footer class="col-12 m-0 p-0">
+                <div class="col-md-2 col-xs-12 foo1">
+                    <div class="d-flex">
+                        <a href="../index.html"><img src="../assets/img/Logo-footer.png" class="img-fluid" alt="Logo"></a>
+                    </div>
                 </div>
-                <div class="footer__datos">
-                    <p>Todos los derechos reservados 2021. Diseño: Nahuel Ponce <br> Teléfono de contacto +54.11.5350.5350  -  Whatsapp +54.11.5350.5350 <br> Buenos Aires, Argentina</p>
-                </div>
-                <div class="footer__redes">
-                    <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
-                    <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+                <div class="col-md-10 col-xs-12 foo2 d-flex">
+                    <div class="footer__redes">
+                        <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+                    </div>
+                    <div class="footer__datos">
+                        <p>Todos los derechos reservados 2021. <br> Diseño: Nahuel Ponce <br>Buenos Aires, Argentina</p>
+                    </div>
                 </div>
             </footer>
-            <!-- fin Footer -->
         </div>
     </div>
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->

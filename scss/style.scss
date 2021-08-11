@@ -6,17 +6,16 @@
 @import "footer";
 @import "nav";
 @import "topnav";
-@import "plantrabajo";
+@import "contacto";
 
 
-body{
-    font-family: Quicksand, sans-serif;
-    overflow-x: hidden;
-}
+body{font-family: Quicksand, sans-serif;
+overflow-x: hidden;}
 
 h1{
+    font-family: 'Questrial', sans-serif;
     color: $colorH1;
-    font-weight: bold;
+    font-size: 3.5rem;
     margin-top: $m-50;
     margin-bottom: $m-30;
 }
@@ -36,46 +35,24 @@ h3{
     margin-bottom: $m-5;
 }
 
-.p{
-    font-family: Catamaran, sans-serif;
-    font-size: 1em;
-}
-
-.index__titulos{
-    @media only screen and (min-width:577px){
-        position: absolute;
-        top: 60%;
-        left: 50px;
-    }
-}
-
 .index__tituloPrincipal{
-    @media only screen and (min-width:577px){
-        font-size: $sizeTituloPrincipal;
-        color: $colorTitulos;
-        text-shadow: #484848 0 0 20px;
-        margin-top: $m-0;
-        margin-bottom: $m-0;
-    }    
+    text-align: center;
+    font-size: $sizeTituloPrincipal;
+    margin-top: $m-0;
+    margin-bottom: $m-0;
 }
 
 .index__subtituloPrincipal{
-    @media only screen and (min-width:577px){
-        font-size: $sizeTituloPrincipal*.8;
-        color: $colorTitulos;
-        text-shadow: #484848 0 0 20px;
-        margin-top: $m-0;
-        margin-bottom: $m-0;
-        }
+    text-align: center;
+    font-size: $sizeTituloPrincipal*.8;
+    color: $colorH2;
+    margin-top: $m-0;
+    margin-bottom: $m-0;
 }
 
 .inicio__bajada{
     font-size:$textoBajada;
-    padding-left: 50px;
-    padding-top: 20px;
-    @media only screen and (min-width:577px){
-    width: 60%;
-    }
+    text-align: center;
 }
 
 .index__section1{
@@ -84,15 +61,18 @@ h3{
     align-items: flex-start;
     position: relative;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
 }
 
-.index__card{
-    transition: all .25s;
-    @media only screen and (min-width:577px){
-        width: 220px;
-        height: 300px;
-    }
+.index__cards{
+    display: flex;
+    column-gap: 3%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.index__cards--alin{
+    justify-content: center;
 }
 
 .experiencia__cards{
@@ -110,8 +90,11 @@ h3{
     transform: scale(1.03)
 }
 
-.card-body{padding: 7px;
-    height: 100%;}
+.index__card{padding: 7px;
+    height: 320px;
+    width: 240px;
+    transition: all .25s;
+}
 
 .card-img-top{width: 60%;}
 
@@ -135,25 +118,6 @@ font-weight: bold;
     align-items: center;
 }
 
-.servivicios__p{
-    @media only screen and (min-width:1024px){
-    padding-right: 50%;
-    margin-bottom: $m-50;
-    }
-}
-
-.plan__p{
-    @media only screen and (min-width:1024px){
-        width: 70%;
-    }
-}
-
-.plan__img{
-    @media only screen and (min-width:1024px){
-    width: 70%;
-    }
-}
-
 .nosotros__fotoPersona{
     margin-top: $p-20;
     margin-bottom: $p-20;
@@ -161,10 +125,6 @@ font-weight: bold;
 
 .servicios__video{
         max-width: 90%;    
-}
-
-.contacto__mapa{
-    max-width: 90%;    
 }
 
 .error__linkIndex{
@@ -175,4 +135,57 @@ font-weight: bold;
 
 .error__linkIndex:hover{color: $colorSegundo;
     text-decoration: none;
+}
+
+.contenido__img--top{
+    background-color: $blanco;
+    margin: 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 20px;
+    min-height: 240px;
+}
+
+.contenido__img--top p{
+    font-family: 'Questrial', sans-serif;
+    width: 60%;
+}
+
+.card-body{
+    text-align: center;
+}
+
+
+@media only screen and (min-width:769px){
+    .card-body{
+        text-align: left;
+    }
+
+    .plan__img{width: 70%;}
+
+    .plan__p{width: 70%;}
+
+    .servivicios__p{
+        padding-right: 50%;
+        margin-bottom: $m-50;
+    }
+
+    .inicio__bajada{
+        text-align: left;
+        padding-left: 48px;
+        width: 80%;
+    }
+
+    .index__tituloPrincipal{
+        text-align: left;
+        padding-left: 48px;
+        padding-top: 20px;
+    }
+
+    .index__subtituloPrincipal{
+        text-align: left;
+        padding-left: 48px;
+    }
 }

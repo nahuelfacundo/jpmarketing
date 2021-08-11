@@ -6,6 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="Nosotros somos el equipo que formamos JP Marketing.">
         <meta name="keywords" content="nosotros, equipo, profesionales, jpmarketing, publicidad, agencia, google, ads, adwords, facebook, posicionamiento, campaña">
+        <!-- Link fuentes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
         <!-- Link CSS aos -->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!-- Bootstrap CSS -->
@@ -20,47 +25,57 @@
     <div class="container-fluid">
         <!-- Top nav -->
         <div class="row">
-            <div class="col-md-12 col-sx-12 m-0 p-0 topNav">
+            <div class="col-md-12 col-sx-12 mb-1 p-0 topNav">
                     <p>Teléfono de contacto +54.11.5350.5350  -  Whatsapp +54.11.5350.5350</p>
             </div>
         </div>
         <!-- fin Top nav -->
         <div class="row">
             <!-- Sidebar-->
-            <nav class="col-lg-2 col-xs-12 navbar navbar-expand-lg navbar-light navbar--bg">
-                <a href="../index.html"><img class="img-fluid nav__logo" src="../assets/img/Logo.png" alt="Logo"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+            <nav class="col-lg-2 col-xs-12 navbar navbar-expand-lg navbar-light">
+                <a href="../index.html"><img src="../assets/img/Logo.png" class=" img-fluid nav__logo" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav navLista font-weight-bold">
+                <div class="nav__lista collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="../index.html">INICIO <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="serviciosdigitales.html">SERVICIOS DIGITALES</a>
+                            <a class="nav-link" href="serviciosdigitales.html">Servicios Digitales</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="plandetrabajo.html">PLAN DE TRABAJO</a>
+                            <a class="nav-link" href="plandetrabajo.html">Plan de Trabajo</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="experiencia.html">EXPERIENCIA</a>
+                            <a class="nav-link" href="experiencia.html">Casos de éxito</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="nosotros.html">NOSOTROS</a>
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">CONTACTO</a>
+                        <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
             </nav>
             <!-- fin Sidebar -->
             <!-- Contenido página -->
-            <div class="col-md-10 col-xs-12 pl-5">
+            <div class="col-lg-10 col-xs-12 pb-5">
+                <div class="row">
+                    <!-- Título -->
+                    <div class="col-12 contenido__img--top pl-5">
+                        <div>
+                            <h1 data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000">¿Quiénes somos?</h1>
+                        </div>
+                        <div>
+                            <p>Te presentamos a nuestro equipo de trabajo.</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="container-fluid">
                     <div class="mb-5">
-                        <h1>¿Quiénes somos?</h1>
                         <table>
                             <tr>
                                 <td><img class="nosotros__fotoPersona rounded" src="../assets/img/persona1.jpg" alt="foto-julieta"></td>
@@ -83,19 +98,22 @@
         </div>
         <div class="row">
             <!-- Footer -->
-            <footer class="col-md-12 col-sx-12">
-                <div>
-                    <a href="../index.html"><img src="../assets/img/Logo-footer.png" alt="Logo"></a>
+            <footer class="col-12 m-0 p-0">
+                <div class="col-md-2 col-xs-12 foo1">
+                    <div class="d-flex">
+                        <a href="../index.html"><img src="../assets/img/Logo-footer.png" class="img-fluid" alt="Logo"></a>
+                    </div>
                 </div>
-                <div class="footer__datos">
-                    <p>Todos los derechos reservados 2021. Diseño: Nahuel Ponce <br> Teléfono de contacto +54.11.5350.5350  -  Whatsapp +54.11.5350.5350 <br> Buenos Aires, Argentina</p>
-                </div>
-                <div class="footer__redes">
-                    <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
-                    <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+                <div class="col-md-10 col-xs-12 foo2 d-flex">
+                    <div class="footer__redes">
+                        <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+                    </div>
+                    <div class="footer__datos">
+                        <p>Todos los derechos reservados 2021. <br> Diseño: Nahuel Ponce <br>Buenos Aires, Argentina</p>
+                    </div>
                 </div>
             </footer>
-            <!-- fin Footer -->
         </div>
     </div>
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
