@@ -7,6 +7,8 @@
 @import "nav";
 @import "topnav";
 @import "contacto";
+@import "index";
+
 
 
 body{font-family: Quicksand, sans-serif;
@@ -35,45 +37,6 @@ h3{
     margin-bottom: $m-5;
 }
 
-.index__tituloPrincipal{
-    text-align: center;
-    font-size: $sizeTituloPrincipal;
-    margin-top: $m-0;
-    margin-bottom: $m-0;
-}
-
-.index__subtituloPrincipal{
-    text-align: center;
-    font-size: $sizeTituloPrincipal*.8;
-    color: $colorH2;
-    margin-top: $m-0;
-    margin-bottom: $m-0;
-}
-
-.inicio__bajada{
-    font-size:$textoBajada;
-    text-align: center;
-}
-
-.index__section1{
-    @include flexRow;
-    justify-content: center;
-    align-items: flex-start;
-    position: relative;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-.index__cards{
-    display: flex;
-    column-gap: 3%;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.index__cards--alin{
-    justify-content: center;
-}
 
 .experiencia__cards{
     @include flexRowWrap;
@@ -86,17 +49,9 @@ h3{
     }
 }
 
-.index__card:hover{
-    transform: scale(1.03)
-}
 
-.index__card{padding: 7px;
-    height: 320px;
-    width: 240px;
-    transition: all .25s;
-}
 
-.card-img-top{width: 60%;}
+.card-img-top{width: 50%;}
 
 .card-text{
     font-weight: bold;
@@ -118,9 +73,25 @@ font-weight: bold;
     align-items: center;
 }
 
-.nosotros__fotoPersona{
+.nosotros__persona--foto{
     margin-top: $p-20;
     margin-bottom: $p-20;
+    max-width: 150px;
+
+}
+
+.nosotros__persona{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.nosotros__persona--texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
 }
 
 .servicios__video{
@@ -157,11 +128,22 @@ font-weight: bold;
     text-align: center;
 }
 
+.form-content .form-items {
+    min-width: auto;
+    width: 90%;
+}
+
+.form-content{
+    display: flex;
+    justify-content: center;
+}
 
 @media only screen and (min-width:769px){
     .card-body{
         text-align: left;
     }
+
+    .card-body-princ{margin-left: 30px;}
 
     .plan__img{width: 70%;}
 
@@ -172,20 +154,27 @@ font-weight: bold;
         margin-bottom: $m-50;
     }
 
-    .inicio__bajada{
-        text-align: left;
-        padding-left: 48px;
-        width: 80%;
+    .nosotros__persona{
+        display: flex;
+        flex-direction: row;
+        align-items: left;
+        gap: 25px;
     }
 
-    .index__tituloPrincipal{
+    .nosotros__persona--texto{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
         text-align: left;
-        padding-left: 48px;
-        padding-top: 20px;
     }
 
-    .index__subtituloPrincipal{
-        text-align: left;
-        padding-left: 48px;
+    .form-content .form-items {
+        width: 600px;
+        margin-left: 30px;
+    }
+    
+    .form-content{
+        display: flex;
+        justify-content: normal
     }
 }

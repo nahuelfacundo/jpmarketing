@@ -251,7 +251,61 @@ nav a {
   margin-bottom: 8px !important; }
 
 .contacto__mapa {
-  max-width: 85%; }
+  max-width: 90%; }
+
+.index__tituloPrincipal {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+.index__subtituloPrincipal {
+  text-align: center;
+  font-size: 40px;
+  color: #636363;
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+.inicio__bajada {
+  font-size: 1.2em;
+  text-align: center; }
+
+.index__cards {
+  display: flex;
+  column-gap: 3%;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.index__cards--alin {
+  justify-content: center; }
+
+.index__card:hover {
+  transform: scale(1.03); }
+
+.index__card {
+  padding: 7px;
+  height: 320px;
+  width: 220px;
+  transition: all .25s; }
+
+@media only screen and (min-width: 769px) {
+  .inicio__bajada {
+    text-align: left;
+    padding-left: 48px;
+    width: 80%; }
+  .index__tituloPrincipal {
+    text-align: left;
+    padding-left: 48px;
+    padding-top: 20px;
+    position: absolute;
+    top: -150px;
+    color: #E5E5E5; }
+  .index__subtituloPrincipal {
+    text-align: left;
+    padding-left: 48px;
+    position: absolute;
+    top: -70px;
+    color: #E5E5E5; } }
 
 body {
   font-family: Quicksand, sans-serif;
@@ -277,41 +331,6 @@ h3 {
   margin-top: 20px;
   margin-bottom: 5px; }
 
-.index__tituloPrincipal {
-  text-align: center;
-  font-size: 50px;
-  margin-top: 0px;
-  margin-bottom: 0px; }
-
-.index__subtituloPrincipal {
-  text-align: center;
-  font-size: 40px;
-  color: #636363;
-  margin-top: 0px;
-  margin-bottom: 0px; }
-
-.inicio__bajada {
-  font-size: 1.2em;
-  text-align: center; }
-
-.index__section1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  position: relative;
-  flex-wrap: wrap;
-  gap: 15px; }
-
-.index__cards {
-  display: flex;
-  column-gap: 3%;
-  flex-wrap: wrap;
-  justify-content: center; }
-
-.index__cards--alin {
-  justify-content: center; }
-
 .experiencia__cards {
   display: flex;
   flex-direction: row;
@@ -324,17 +343,8 @@ h3 {
     .experiencia__cards {
       padding-right: 40%; } }
 
-.index__card:hover {
-  transform: scale(1.03); }
-
-.index__card {
-  padding: 7px;
-  height: 320px;
-  width: 240px;
-  transition: all .25s; }
-
 .card-img-top {
-  width: 60%; }
+  width: 50%; }
 
 .card-text {
   font-weight: bold;
@@ -353,9 +363,22 @@ h3 {
 .cardExp {
   align-items: center; }
 
-.nosotros__fotoPersona {
+.nosotros__persona--foto {
   margin-top: 20px;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  max-width: 150px; }
+
+.nosotros__persona {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.nosotros__persona--texto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 10px; }
 
 .servicios__video {
   max-width: 90%; }
@@ -386,9 +409,19 @@ h3 {
 .card-body {
   text-align: center; }
 
+.form-content .form-items {
+  min-width: auto;
+  width: 90%; }
+
+.form-content {
+  display: flex;
+  justify-content: center; }
+
 @media only screen and (min-width: 769px) {
   .card-body {
     text-align: left; }
+  .card-body-princ {
+    margin-left: 30px; }
   .plan__img {
     width: 70%; }
   .plan__p {
@@ -396,14 +429,19 @@ h3 {
   .servivicios__p {
     padding-right: 50%;
     margin-bottom: 50px; }
-  .inicio__bajada {
-    text-align: left;
-    padding-left: 48px;
-    width: 80%; }
-  .index__tituloPrincipal {
-    text-align: left;
-    padding-left: 48px;
-    padding-top: 20px; }
-  .index__subtituloPrincipal {
-    text-align: left;
-    padding-left: 48px; } }
+  .nosotros__persona {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    gap: 25px; }
+  .nosotros__persona--texto {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left; }
+  .form-content .form-items {
+    width: 600px;
+    margin-left: 30px; }
+  .form-content {
+    display: flex;
+    justify-content: normal; } }
